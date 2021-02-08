@@ -4,7 +4,6 @@ A Raspberry Pi Zero W temperature and humidity sensor which logs to Postgres via
 ## Hardware
 * Raspberry Pi Zero W
 * SEN-DHT22 Sensor (Joy-IT, integrated resistor, 1-wire protocol)
-* a resistor
 
 ## Software
 * Raspberry OS (Buster, 01-11-2021)
@@ -27,7 +26,7 @@ network={
      key_mgmt=WPA-PSK
 }
 ```
-* put the SD card into the RasPi and connect the DHT sensor as shown to pins x, x, x ![Pinout](info/GPIO.png)
+* put the SD card into the RasPi and connect the DHT sensor as shown to pins 3v3, GPIO4, GND ![Pinout](info/GPIO.png)
 * boot the Pi and SSH in
 * then run `passwd` for pi user and `sudo passwd` for su user
 * then run `sudo raspi-config` to set locale, hostname, enable Pin IO and I2C. (GUI can be turned off)
