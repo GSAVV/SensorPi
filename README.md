@@ -56,5 +56,5 @@ After that, we set the connection details of the PG server inside the `sensorpi.
 
 Finally, we add the following line to the `/etc/rc.local` file
 ```
-python3 /home/pi/sensorpi/startup.sh &
+/home/pi/sensorpi/startup.sh &
 ```
